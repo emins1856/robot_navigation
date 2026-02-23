@@ -1,0 +1,3 @@
+[console_scripts]
+send_goal_serial = robot_navigation.send_goal_serial:main
+serial_navigation_node = robot_navigation.serial_navigation_node:main

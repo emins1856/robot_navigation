@@ -1,0 +1,25 @@
+[1.216s] Invoking command in '/home/emin/ros2_ws/src/robot_navigation': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/robot_navigation build --build-base /home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/build install --record /home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/install.log --single-version-externally-managed install_data
+[1.666s] running egg_info
+[1.704s] writing build/robot_navigation/robot_navigation.egg-info/PKG-INFO
+[1.705s] writing dependency_links to build/robot_navigation/robot_navigation.egg-info/dependency_links.txt
+[1.706s] writing entry points to build/robot_navigation/robot_navigation.egg-info/entry_points.txt
+[1.706s] writing requirements to build/robot_navigation/robot_navigation.egg-info/requires.txt
+[1.706s] writing top-level names to build/robot_navigation/robot_navigation.egg-info/top_level.txt
+[1.775s] reading manifest file 'build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[1.776s] writing manifest file 'build/robot_navigation/robot_navigation.egg-info/SOURCES.txt'
+[1.776s] running build
+[1.776s] running build_py
+[1.776s] copying robot_navigation/serial_navigation_node.py -> /home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/build/lib/robot_navigation
+[1.777s] running install
+[1.786s] running install_lib
+[1.824s] copying /home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/build/lib/robot_navigation/serial_navigation_node.py -> /home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/python3.12/site-packages/robot_navigation
+[1.825s] byte-compiling /home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/python3.12/site-packages/robot_navigation/serial_navigation_node.py to serial_navigation_node.cpython-312.pyc
+[1.827s] running install_data
+[1.827s] running install_egg_info
+[1.865s] removing '/home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/python3.12/site-packages/robot_navigation-0.0.0-py3.12.egg-info' (and everything under it)
+[1.865s] Copying build/robot_navigation/robot_navigation.egg-info to /home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/python3.12/site-packages/robot_navigation-0.0.0-py3.12.egg-info
+[1.866s] running install_scripts
+[2.097s] Installing send_goal_serial script to /home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/robot_navigation
+[2.097s] Installing serial_navigation_node script to /home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/robot_navigation
+[2.098s] writing list of installed files to '/home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/install.log'
+[2.133s] Invoked command in '/home/emin/ros2_ws/src/robot_navigation' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/emin/ros2_ws/src/robot_navigation/install/robot_navigation/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/robot_navigation build --build-base /home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/build install --record /home/emin/ros2_ws/src/robot_navigation/build/robot_navigation/install.log --single-version-externally-managed install_data
