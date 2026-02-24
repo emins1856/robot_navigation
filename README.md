@@ -1,4 +1,4 @@
-# 🤖 robot_navigation
+#  robot_navigation
 
 > **ROS2-based autonomous mobile robot** — obstacle avoidance, path planning, and real-time serial control over an ESP32 microcontroller.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📽️ Demo
+##  Demo
 
 | ROS2 Command & ACK | Soft Deceleration Log |
 |---|---|
@@ -21,7 +21,7 @@
 
 ---
 
-## 📖 Overview
+##  Overview
 
 This project implements a complete **autonomous navigation stack** for a differential-drive robot, running on commodity hardware — a laptop running ROS2 and an ESP32 microcontroller. The robot navigates from a start position **A** to a goal position **B**, avoiding obstacles detected by an infrared sensor, all without wheel encoders or GPS.
 
@@ -35,19 +35,19 @@ Two distinct obstacle avoidance strategies are implemented and compared, making 
 
 ---
 
-## ✨ Features
+##  Features
 
-- 🔌 **ROS2 ↔ ESP32 serial bridge** — clean ASCII command/response protocol over USB
-- 📐 **Rotation + forward motion** — heading (degrees) and distance (metres) commanded from ROS2
-- 🚀 **Smooth motion profile** — configurable acceleration step, min/max speed, and loop rate
-- 🟫 **Dual-mode tape detection** — short IR pulse = distance marker, long pulse = obstacle
-- 🔀 **Two obstacle avoidance algorithms** — reactive steering and state-based stop-and-rotate
-- 🧩 **Modular firmware** — three interchangeable ESP32 scripts, swap by renaming to `code.py`
-- 📋 **Structured ROS2 logging** — every speed command and state transition logged with timestamps
+-  **ROS2 ↔ ESP32 serial bridge** — clean ASCII command/response protocol over USB
+-  **Rotation + forward motion** — heading (degrees) and distance (metres) commanded from ROS2
+-  **Smooth motion profile** — configurable acceleration step, min/max speed, and loop rate
+-  **Dual-mode tape detection** — short IR pulse = distance marker, long pulse = obstacle
+-  **Two obstacle avoidance algorithms** — reactive steering and state-based stop-and-rotate
+-  **Modular firmware** — three interchangeable ESP32 scripts, swap by renaming to `code.py`
+-  **Structured ROS2 logging** — every speed command and state transition logged with timestamps
 
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 ```
 ┌─────────────────────────────────┐       USB Serial (115200 baud)
@@ -91,7 +91,7 @@ Two distinct obstacle avoidance strategies are implemented and compared, making 
 
 ---
 
-## 📦 Repository Structure
+##  Repository Structure
 
 ```
 robot_navigation/
@@ -112,7 +112,7 @@ robot_navigation/
 
 ---
 
-## 🔧 Hardware
+##  Hardware
 
 | Component | Details |
 |-----------|---------|
@@ -134,7 +134,7 @@ robot_navigation/
 
 ---
 
-## ⚙️ Key Parameters
+##  Key Parameters
 
 Defined at the top of each firmware file — tune these to match your robot's physical characteristics.
 
@@ -152,7 +152,7 @@ Defined at the top of each firmware file — tune these to match your robot's ph
 
 ---
 
-## 🚦 Obstacle Avoidance Algorithms
+##  Obstacle Avoidance Algorithms
 
 ### Algorithm 1 — Reactive Steering (`code_reactive.py`)
 
@@ -165,7 +165,7 @@ right = current_speed * AVOID_RIGHT_SCALE  # 1.0 × speed
 set_speed(left, right)
 ```
 
-| ✅ Pros | ⚠️ Cons |
+|  Pros |  Cons |
 |--------|--------|
 | Smooth, continuous motion | Can get trapped in tight clusters |
 | Fast response, no stopping | Heading drift accumulates |
@@ -188,7 +188,7 @@ elif state == "AVOID":
         state = "MOVE"          # resume forward
 ```
 
-| ✅ Pros | ⚠️ Cons |
+|  Pros |  Cons |
 |--------|--------|
 | Reliable in complex layouts | Stop-start motion, not smooth |
 | Predictable and repeatable | Slower overall travel time |
@@ -198,7 +198,7 @@ elif state == "AVOID":
 
 ---
 
-## 🛠️ Setup & Installation
+##  Setup & Installation
 
 ### Prerequisites
 
@@ -246,7 +246,7 @@ Edit `distance` and `heading` in `send_goal_serial.py` before running to change 
 
 ---
 
-## 📡 Serial Protocol
+##  Serial Protocol
 
 All messages are plain ASCII, newline-terminated (`\n`).
 
@@ -272,7 +272,7 @@ All messages are plain ASCII, newline-terminated (`\n`).
 
 ---
 
-## 🧪 Testing Checklist
+##  Testing Checklist
 
 - [x] Serial port opens and `ESP32 READY` received
 - [x] `GO` command sent and `ACK GO` returned
@@ -286,7 +286,7 @@ All messages are plain ASCII, newline-terminated (`\n`).
 
 ---
 
-## 🔍 Limitations & Future Work
+##  Limitations & Future Work
 
 | Current Limitation | Potential Improvement |
 |--------------------|-----------------------|
@@ -298,7 +298,7 @@ All messages are plain ASCII, newline-terminated (`\n`).
 
 ---
 
-## 📚 Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -320,6 +320,6 @@ GitHub: github.com/emins1856
 
 ---
 
-## 📄 License
+##  License
 
 This project is open source under the [MIT License](LICENSE).
